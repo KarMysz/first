@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script type="text/javascript">
+        function silnia (i){
+            if (i=1){
+                return 1;
+            }
+            else{
+                return i *silnia(i-1);
+            }
+            alert(document.getElementById("user").value);
+        }
+    </script>
+    </head>
+    <body>
+        <input id="user" size="6">
+    <button type="button" value="licz" onclick="silnia(this.user.value)">przycisk</button>
+    </body>
+</html>

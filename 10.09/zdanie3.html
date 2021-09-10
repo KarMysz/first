@@ -1,0 +1,27 @@
+<html>
+    <head>
+    <script>
+        function komp(cpu,gpu,ram,motherboard,zasilacz,dysk)
+        {
+            this.cpu=cpu;
+            this.gpu=gpu;
+            this.ram=ram;
+            this.motherboard=motherboard;
+            this.zasilacz=zasilacz;
+            this.dysk=dysk;
+        }
+        Microsoft=new komp("intel", "gtx1080", "predator", "MSI", "bequiet", "toshiba")
+        Acer=new komp("intel", "gtx1080", "predator", "MSI", "bequiet", "toshiba")
+        HP=new komp("intel", "gtx1080", "predator", "MSI", "bequiet", "toshiba")
+        Dell=new komp("intel", "gtx1080", "predator", "MSI", "bequiet", "toshiba")
+        Samsung=new komp("intel", "gtx1080", "predator", "MSI", "bequiet", "toshiba")
+        document.write("Procesor: " + Microsoft.cpu + "Grafa:  " + Microsoft.gpu + "Ram:  " + Microsoft.ram + "Plyta glowna:  " + Microsoft.motherboard + "Zasilacz: " + Microsoft.zasilacz + "Dysk:  " + Microsoft.dysk + "<br>");
+        document.write("Procesor: " + Acer.cpu + "Grafa:  " + Acer.gpu + "Ram:  " + Acer.ram + "Plyta glowna:  " + Acer.motherboard + "Zasilacz:  " + Acer.zasilacz + "Dysk:  " + Acer.dysk + "<br>");
+        document.write("Procesor: " + HP.cpu + "Grafa:  " + HP.gpu + "Ram: " + HP.ram + "Plyta glowna:  " + HP.motherboard + "Zasilacz:  " + HP.zasilacz + "Dysk:  " + HP.dysk + "<br>");
+        document.write("Procesor: " + Dell.cpu + "Grafa:  " + Dell.gpu + "Ram:  " + Dell.ram + "Plyta glowna:  " + Dell.motherboard + "Zasilacz:  " + Dell.zasilacz + "Dysk:  " + Dell.dysk + "<br>");
+        document.write("Procesor: " + Samsung.cpu + "Grafa:  " + Samsung.gpu + "Ram:  " + Samsung.ram + "Plyta glowna:  " + Samsung.motherboard + "Zasilacz:  " + Samsung.zasilacz + "Dysk:  " + Samsung.dysk + "<br>");
+    </script>
+    </head>
+    <body>
+    </body>
+</html>

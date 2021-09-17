@@ -1,0 +1,47 @@
+<html> 
+<head> 
+<title>
+  Obwód i Pole trapezu równoramiennego
+</title>
+  <script language="JavaScript">
+ 
+function obw(a,b,c,d)
+{
+    a_licz=parseFloat(a)
+    b_licz=parseFloat(b)
+    c_licz=parseFloat(c)
+    d_licz=parseFloat(d)
+   var obw = (a+b+c+d);
+   alert("Obwod="+obw);
+}
+function pole(a,b,h)
+{
+    a_licz=parseFloat(a)
+    b_licz=parseFloat(b)  
+    h_licz=parseFloat(h)
+   var obw = (a+b/2*h);
+   alert("Pole="+pole); 
+}
+       </script>
+</head> 
+<body> 
+ Obw trapezu równoramiennego
+<br> <br>
+<form name="formularz" action="..." onsubmit="obw(this.a.value,this.b.value,this.c.value,this.d.value);return false">  
+ Podaj a=
+<input  size="6"  name="a">
+ Podaj b=
+<input  size="6"  name="b">
+Podaj c=
+<input  size="6"  name="c">
+Podaj d=
+<input  size="6"  name="d">
+<br>
+<br>
+<input  TYPE="submit"  Value="oblicz" >
+<br>
+<br>
+</form>
+ 
+</body> 
+</html>

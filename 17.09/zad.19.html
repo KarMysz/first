@@ -1,0 +1,33 @@
+<html> 
+<head> 
+<title>
+  Przykład obliczenia V  i  Pc walca
+</title>
+  <script language="JavaScript">
+ 
+function obw(a,b)
+{
+    a_licz=parseFloat(a)
+    b_licz=parseFloat(b)
+   var obw = (a*2) + (b*2);
+   alert("Obwod="+obw);
+}
+       </script>
+</head> 
+<body> 
+ Obw prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit=" obw(this.a.value,this.b.value);return false">  
+ Podaj r=
+<input  size="6"  name="a">
+ Podaj h=
+<input  size="6"  name="b">
+<br>
+<br>
+<input  TYPE="submit"  Value="oblicz" >
+<br>
+<br>
+</form>
+ 
+</body> 
+</html>

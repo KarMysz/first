@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function drabinka(k, m)
+            {
+                var a = parseFloat(k);
+                var b = parseFloat(m);
+
+
+               var c = Math.pow(a,2) + Math.pow(b,2);
+               var d = Math.sqrt(c);
+
+              document.write(d);
+
+
+            }
+            </script>
+    </head>
+
+    <body>
+        
+<form onsubmit="drabinka(this.k.value,this.m.value )">
+Podaj k=<input type="number" name="k"/> <br>
+Podaj m=<input type="number" name="m"/> <br>
+<input type="submit" value="oblicz"/> <br>
+</form>
+
+<div id="drabinka"></div>
+
+    </body>
+</html>

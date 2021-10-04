@@ -1,0 +1,46 @@
+<html>
+    <head>
+   <title>fajna stronka</title>
+   <link rel="stylesheet" href="styl.css">
+   <script>
+     function dodaj()
+     {
+      var k=parseFloat(lk.value);
+      var a=parseFloat(la.value);
+      var r=parseFloat(lr.value);
+
+      wynik.innerHTML = "Nasza armia liczy: " + "<br>" + k + " Muszkieterów" + "<br>" + a  + " Artyleżystów" + "<br>" + r + " Kawależystów" + "<br>";
+     }
+     function armia()
+     {
+      
+     }
+   </script>
+    </head>
+    <body>
+      <div id="naglowek">
+      <a href="http://wielkaburgundia.blogspot.com/" target="_blank"><img src="herb.png"></a>
+      </div>
+      <div id="box1">
+        <div id="wynik">
+      </div>
+      </div>
+
+      <div id="box2">
+        <br>
+        <input id="lk" type="number"> <br> ^ liczba muszkieterów ^
+        <br>
+        <input id="la" type="number"> <br> ^ liczba artyleżystów ^
+        <br>
+        <input id="lr" type="number"> <br> ^ liczba kawależystów ^
+        <br> 
+        <input type="button" value="oblicz" onclick="dodaj()"/> 
+      </div>
+
+      <div style="clear:both"></div>
+
+      <div id="dol">
+      <img src="rycerz.gif" height=100%>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+#naglowek{
+ background-color: blue;
+ width: 100%;
+ height: 25%;
+}
+
+#box1 {
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+#box2 {
+    background-color: green;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+
+#dol {
+    background-color: #600201;
+    width: 100%;
+    height: 25%;
+}

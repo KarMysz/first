@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>kreator postaci</title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="rpg.css">
+ <script>
+     function ras(lvl,sila,inteligencja,wola,zwinnosc,szybkosc,wytrzymalosc,osobowosc,szczescie)
+     {
+         this.lvl = lvl;
+         this.sila = sila;
+         this.inteligencja = inteligencja;
+         this.wola = wola;
+         this.zwinnosc = zwinnosc;
+         this.szybkosc = szybkosc;
+         this.wytrzymalosc = wytrzymalosc;
+         this.osobowosc = osobowosc;
+         this.szczescie = szczescie;
+     }
+     function ra()
+     {
+       const Cesarski = new ras("1","40","40","30","30","40","40","50","50")
+       const Khajit = new ras("1","40","40","30","50","40","30","40","50")
+       const Leśny = new ras("1","30","40","30","50","50","40","30","50")
+       const Nord = new ras("1","50","30","30","40","40","50","30","50")
+       const Redgard = new ras("1","50","30","30","40","40","50","30","50")
+       const Wysoki = new ras("1","30","50","40","40","30","40","40","50")
+       const Breton = new ras("1","40","50","50","30","30","30","40","50")
+       const Ork = new ras("1","45","30","50","35","30","50","30","50")
+       const Argonianin = new ras("1","40","40","30","50","50","30","30","50")
+       const Mroczny = new ras("1","40","40","30","40","50","40","30","50")
+
+       var nick = nazwa.value;
+       var postac = rasa.value;
+       
+       switch(postac)
+       {
+        case 'ces':
+        staty.innerHTML = "Nick: "+ nick+ "<br> Lvl: " + Cesarski.lvl + "<br> Siła: " + Cesarski.sila + "<br> Inteligencja: " + Cesarski.inteligencja + "<br> Wola: " + Cesarski.wola + "<br> Zwinność: " + Cesarski.zwinnosc + "<br> Szybkość: " + Cesarski.szybkosc + "<br> Wytrzymałość: " + Cesarski.wytrzymalosc + "<br> Osobowość: " + Cesarski.osobowosc + "<br> Szczęście: " + Cesarski.szczescie;
+        var plik1 ="<img src = \"imperial.jpg\"/ width = \"700px\" height=\"400px\">";
+        obraz.innerHTML = plik1;
+        break;
+        case 'kha':
+        staty.innerHTML = "Nick: "+ nick+ "<br> Lvl: " + Khajit.lvl + "<br> Siła: " + Khajit.sila + "<br> Inteligencja: " + Khajit.inteligencja + "<br> Wola: " + Khajit.wola + "<br> Zwinność: " + Khajit.zwinnosc + "<br> Szybkość: " + Khajit.szybkosc + "<br> Wytrzymałość: " + Khajit.wytrzymalosc + "<br> Osobowość: " + Khajit.osobowosc + "<br> Szczęście: " + Khajit.szczescie;
+        var plik2 ="<img src = \"khajit.jpg\"/ width = \"700px\" height=\"400px\">";
+        obraz.innerHTML = plik2;
+        break;
+        case 'les':
+        staty.innerHTML = "Nick: "+ nick+ "<br> Lvl: " + Leśny.lvl + "<br> Siła: " + Leśny.sila + "<br> Inteligencja: " + Leśny.inteligencja + "<br> Wola: " + Leśny.wola + "<br> Zwinność: " + Leśny.zwinnosc + "<br> Szybkość: " + Leśny.szybkosc + "<br> Wytrzymałość: " + Leśny.wytrzymalosc + "<br> Osobowość: " + Leśny.osobowosc + "<br> Szczęście: " + Leśny.szczescie;
+        var plik3 ="<img src = \"breton.jpg\"/ width = \"700px\" height=\"400px\">";
+        obraz.innerHTML = plik3;
+        break;
+        case 'nor':
+        staty.innerHTML = "Nick: "+ nick+ "<br> Lvl: " + Nord.lvl + "<br> Siła: " + Nord.sila + "<br> Inteligencja: " + Nord.inteligencja + "<br> Wola: " + Nord.wola + "<br> Zwinność: " + Nord.zwinnosc + "<br> Szybkość: " + Nord.szybkosc + "<br> Wytrzymałość: " + Nord.wytrzymalosc + "<br> Osobowość: " + Nord.osobowosc + "<br> Szczęście: " + Nord.szczescie;
+        var plik4 ="<img src = \"nord.jpg\"/ width = \"700px\" height=\"400px\">";
+        obraz.innerHTML = plik4;
+        break;
+        case 'red':
+        staty.innerHTML = "Nick: "+ nick+ "<br> Lvl: " + Redgard.lvl + "<br> Siła: " + Redgard.sila + "<br> Inteligencja: " + Redgard.inteligencja + "<br> Wola: " + Redgard.wola + "<br> Zwinność: " + Redgard.zwinnosc + "<br> Szybkość: " + Redgard.szybkosc + "<br> Wytrzymałość: " + Redgard.wytrzymalosc + "<br> Osobowość: " + Redgard.osobowosc + "<br> Szczęście: " + Redgard.szczescie;
+        var plik5 ="<img src = \"breton.jpg\"/ width = \"700px\" height=\"400px\">";
+        obraz.innerHTML = plik5;
+        break;
+        case 'wys':
+        staty.innerHTML = "Nick: "+ nick+ "<br> Lvl: " + Wysoki.lvl + "<br> Siła: " + Wysoki.sila + "<br> Inteligencja: " + Wysoki.inteligencja + "<br> Wola: " + Wysoki.wola + "<br> Zwinność: " + Wysoki.zwinnosc + "<br> Szybkość: " + Wysoki.szybkosc + "<br> Wytrzymałość: " + Wysoki.wytrzymalosc + "<br> Osobowość: " + Wysoki.osobowosc + "<br> Szczęście: " + Wysoki.szczescie;
+        var plik6 ="<img src = \"high_elf.jpg\"/ width = \"700px\" height=\"400px\">";
+        obraz.innerHTML = plik6;
+        break;
+        case 'bre':
+        staty.innerHTML = "Nick: "+ nick+ "<br> Lvl: " + Breton.lvl + "<br> Siła: " + Breton.sila + "<br> Inteligencja: " + Breton.inteligencja + "<br> Wola: " + Breton.wola + "<br> Zwinność: " + Breton.zwinnosc + "<br> Szybkość: " + Breton.szybkosc + "<br> Wytrzymałość: " + Breton.wytrzymalosc + "<br> Osobowość: " + Breton.osobowosc + "<br> Szczęście: " + Breton.szczescie;
+        var plik7 ="<img src = \"breton.jpg\"/ width = \"700px\" height=\"400px\">";
+        obraz.innerHTML = plik7;
+        break;
+        case 'ork':
+        staty.innerHTML = "Nick: "+ nick+ "<br> Lvl: " + Ork.lvl + "<br> Siła: " + Ork.sila + "<br> Inteligencja: " + Ork.inteligencja + "<br> Wola: " + Ork.wola + "<br> Zwinność: " + Ork.zwinnosc + "<br> Szybkość: " + Ork.szybkosc + "<br> Wytrzymałość: " + Ork.wytrzymalosc + "<br> Osobowość: " + Ork.osobowosc + "<br> Szczęście: " + Ork.szczescie;
+        var plik8 ="<img src = \"ork.png\"/ width = \"700px\" height=\"400px\">";
+        obraz.innerHTML = plik8;
+        break;
+        case 'arg':
+        staty.innerHTML = "Nick: "+ nick+ "<br> Lvl: " + Argonianin.lvl + "<br> Siła: " + Argonianin.sila + "<br> Inteligencja: " + Argonianin.inteligencja + "<br> Wola: " + Argonianin.wola + "<br> Zwinność: " + Argonianin.zwinnosc + "<br> Szybkość: " + Argonianin.szybkosc + "<br> Wytrzymałość: " + Argonianin.wytrzymalosc + "<br> Osobowość: " + Argonianin.osobowosc + "<br> Szczęście: " + Argonianin.szczescie;
+        var plik9 ="<img src = \"argonian.jfif\"/ width = \"600px\" height=\"400px\">";
+        obraz.innerHTML = plik9;
+        break;
+        case 'mro':
+        staty.innerHTML = "Nick: "+ nick+ "<br> Lvl: " + Mroczny.lvl + "<br> Siła: " + Mroczny.sila + "<br> Inteligencja: " + Mroczny.inteligencja + "<br> Wola: " + Mroczny.wola + "<br> Zwinność: " + Mroczny.zwinnosc + "<br> Szybkość: " + Mroczny.szybkosc + "<br> Wytrzymałość: " + Mroczny.wytrzymalosc + "<br> Osobowość: " + Mroczny.osobowosc + "<br> Szczęście: " + Mroczny.szczescie;
+        var plik10 ="<img src = \"dark_elf.jpg\"/ width = \"700px\" height=\"400px\">";
+        obraz.innerHTML = plik10;
+        break;
+       }
+     }
+ </script>
+</head>
+<body>
+    <div id="naglowek">The Elder Scrolls IV: Oblivion</div>
+
+    <div id="obraz">
+        <img src="oblivion.png" width="600px" height="400px"/>
+    </div>
+    
+    <div id="postac">
+        <p>Nick: </p><br>
+        <input type="text" size="10" id="nazwa"/><br>
+
+    <p>Wybierz rasę: </p><br>
+    <select id="rasa">
+     <option value="ces"> Cesarski </option>
+     <option value="kha"> Khajit </option>
+     <option value="les"> Leśny Elf </option>
+     <option value="nor"> Nord </option>
+     <option value="red"> Redgard </option>
+     <option value="wys"> Wysoki Elf </option>
+     <option value="bre"> Breton </option>
+     <option value="ork"> Ork </option>
+     <option value="arg"> Argonianin </option>
+     <option value="mro"> Mroczny Elf </option> 
+ </select>
+ <br><br><br>
+<input type="submit" name="zakończ" onclick="ra()"/>
+</div>
+
+<div style="clear:both;"></div>
+
+<div id="staty"></div>
+</body>
+</html>

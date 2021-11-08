@@ -1,0 +1,34 @@
+body{
+    margin: 0%;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#gora{
+    width: 100%;
+    height: 10%;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+#lewa{
+    width: 70%;
+    height: 80%;
+    background-color: yellow;
+    float: left;
+    text-align: center;
+}
+#prawa{
+width: 30%;
+height: 80%;
+background-color: blue;
+float: left;
+color: white;
+}
+#dol{
+    width: 100%;
+    height: 10%;
+    background-color: red;
+    float: left;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jak sobota to do Lidla</title>
+    <link rel="stylesheet" href="lista.css">
+    <script>
+        function zliczanie() {
+            var mle = document.getElementById("mleko");
+            var lay = document.getElementById("laysy");
+            var jez = document.getElementById("jezyki");
+            var pla = document.getElementById("platki");
+            var whi = document.getElementById("whisky");
+            var prz = document.getElementById("przecena");
+           
+            var cena=0;
+            var lista= "twoje produkty to: ";
+
+            if(mle.checked)
+            {
+             lista += "Mleko, ";
+             cena += 5;
+        }
+        if(lay.checked)
+            {
+             lista += "Laysy, ";
+             cena += 6;
+        }
+        if(jez.checked)
+            {
+             lista += "Jezyki, ";
+             cena += 4;
+        }
+        if(pla.checked)
+            {
+             lista += "Platki, ";
+             cena += 8;
+        }
+        if(whi.checked)
+            {
+             lista += "Whisky, ";
+             cena += 40;
+        }
+        if(prz.checked)
+        {
+        cena *= 0.6;
+        }
+        wynik.innerHTML = lista
+        wynik2.innerHTML = "Cena produktów: " + parseFloat(cena).toFixed(2) + "zł"
+    }
+    </script>
+</head>
+<body>
+    <div id="gora">
+   <h1>Jak sobota i zakupy to tylko do Lidla</h1>
+    </div>
+    <div id="lewa">
+    <input type="checkbox" id="mleko" name="mleko"> Mleko 5zł <br>
+    <input type="checkbox" id="laysy" name="laysy"> Laysy 6zł <br>
+    <input type="checkbox" id="jezyki" name="jezyki"> Jeżyki 4zł <br>
+    <input type="checkbox" id="platki" name="platki"> Płatki 8zł <br>
+    <input type="checkbox" id="whisky" name="whisky"> Whisky 40zł <br>
+    <input type="button" id="zaplac" name="zaplac" value="zapłać przy kasie" onclick="zliczanie()"> <br>
+    <input type="checkbox" id="przecena" name="przecena"> Bon na -40% <br>
+    </div>
+    <div id="prawa">
+   <p id="wynik"></p>
+   <p id="wynik2"></p>
+    </div>
+    <div id="dol">
+
+    </div>
+</body>
+</html>
